@@ -13,6 +13,7 @@
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 240 5.9% 10%;
     --accent-foreground: 0 0% 98%;
+    --border: 240 5% 90%;
   }
 
   .dark {
@@ -24,6 +25,7 @@
     --muted-foreground: 240 5% 64.9%;
     --accent: 0 0% 98%;
     --accent-foreground: 240 5.9% 10%;
+    --border: 240 3.7% 15.9%;
   }
 
   * {

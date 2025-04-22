@@ -8,6 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        border: "hsl(var(--border))",
         background: {
           DEFAULT: "hsl(var(--background))",
           secondary: "hsl(var(--background-secondary))",
