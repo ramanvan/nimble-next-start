@@ -8,15 +8,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#1A1F2C",
-        foreground: "#C8C8C9",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          secondary: "hsl(var(--background-secondary))",
+        },
+        foreground: {
+          DEFAULT: "hsl(var(--foreground))",
+          secondary: "hsl(var(--foreground-secondary))",
+        },
         accent: {
-          DEFAULT: "#9EE7D8",
-          foreground: "#1A1F2C",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         muted: {
-          DEFAULT: "#222222",
-          foreground: "#8E9196",
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
       },
       borderRadius: {

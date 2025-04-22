@@ -4,13 +4,35 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-background text-foreground;
+  :root {
+    --background: 0 0% 100%;
+    --background-secondary: 0 0% 98%;
+    --foreground: 240 10% 3.9%;
+    --foreground-secondary: 240 5% 64.9%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 5.9% 10%;
+    --accent-foreground: 0 0% 98%;
   }
-}
 
-* {
-  @apply border-muted;
+  .dark {
+    --background: 240 10% 3.9%;
+    --background-secondary: 240 10% 5.9%;
+    --foreground: 0 0% 98%;
+    --foreground-secondary: 240 5% 64.9%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 0 0% 98%;
+    --accent-foreground: 240 5.9% 10%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors;
+  }
 }
 
 input[type="number"]::-webkit-inner-spin-button,
